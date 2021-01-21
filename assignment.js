@@ -1,4 +1,4 @@
-// https://github.com/jihan212/assignment3-javascript
+// https://github.com/jihan212/assignment-3_javascript
 
 // Function for kilometer to meter
 
