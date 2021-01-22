@@ -49,16 +49,18 @@ function hotelCost(days) {
 // Function for longest string in array
 
 function megaFriend(nameList) {
-    var max = nameList[0].length;
-    var name = nameList[0];
-    for( var i=1; i<nameList.length; i++ ){
-        var element = nameList[i].length;
-        if ( element> max ){
-            max = element;
-            name = nameList[i];
-        }
-    }
-    return name;
-}
-// friendsName = [ "a1","aa2","aaa3","aaaa4","aaaaa5","aaaaaa6","aaaaaaa7","aaaaaaaa8","aaaaaaaaa9","aaaaaaaaaa10" ];
-// console.log(megaFriend(friendsName));
+    if (nameList.length == 0){
+        return "Array is empty";
+      } else {
+      var max = nameList[0].length;
+      var name = nameList[0];
+      for( var i=1; i<nameList.length; i++ ){
+          var element = nameList[i].length;
+          if ( element> max ){
+              max = element;
+              name = nameList[i];
+          }
+      }
+      return name;
+      }
+  }
